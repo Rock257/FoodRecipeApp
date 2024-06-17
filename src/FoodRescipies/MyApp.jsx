@@ -21,7 +21,7 @@ export default function MyApp() {
     
     useEffect(()=>{
       getRecipies();
-    },[query]);
+    },[ getRecipies]);
 
     const updateSearch = (e)=>{
       setSearch(e.target.value)
